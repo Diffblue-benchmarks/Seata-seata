@@ -174,161 +174,21 @@ phases:
       # instrument the file as opposed to the function only
       cover-only: file
 units:
- - target:
-   - dir: common/target/classes
-     file: io/seata/common/util/CompressUtil.class
-     sourceDir: common/src/main/java
-     sourceFile: io/seata/common/util/CompressUtil.java
- - target:
-   - dir: core/target/classes
-     file: io/seata/core/protocol/AbstractMessage.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/AbstractMessage.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/GlobalCommitRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/GlobalCommitRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/BranchReportRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/BranchReportRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/MergedMessage.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/MergedMessage.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/GlobalRollbackResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/GlobalRollbackResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/AbstractTransactionRequestToRM.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/AbstractTransactionRequestToRM.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/AbstractTransactionRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/AbstractTransactionRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/AbstractTransactionResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/AbstractTransactionResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/AbstractBranchEndRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/AbstractBranchEndRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/BranchReportResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/BranchReportResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/AbstractResultMessage.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/AbstractResultMessage.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/AbstractBranchEndResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/AbstractBranchEndResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/RegisterRMRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/RegisterRMRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/AbstractTransactionRequestToTC.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/AbstractTransactionRequestToTC.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/GlobalCommitResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/GlobalCommitResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/GlobalBeginRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/GlobalBeginRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/BranchRollbackRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/BranchRollbackRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/GlobalLockQueryRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/GlobalLockQueryRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/GlobalRollbackRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/GlobalRollbackRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/GlobalStatusRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/GlobalStatusRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/AbstractIdentifyResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/AbstractIdentifyResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/BranchCommitResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/BranchCommitResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/RegisterRMResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/RegisterRMResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/GlobalLockQueryResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/GlobalLockQueryResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/RegisterTMRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/RegisterTMRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/BranchRegisterResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/BranchRegisterResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/MessageCodec.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/MessageCodec.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/BranchCommitRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/BranchCommitRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/AbstractGlobalEndResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/AbstractGlobalEndResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/MergeResultMessage.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/MergeResultMessage.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/BranchRollbackResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/BranchRollbackResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/RegisterTMResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/RegisterTMResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/GlobalBeginResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/GlobalBeginResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/MergedWarpMessage.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/MergedWarpMessage.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/BranchRegisterRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/BranchRegisterRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/AbstractIdentifyRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/AbstractIdentifyRequest.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/GlobalStatusResponse.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/GlobalStatusResponse.java
-   - dir: core/target/classes
-     file: io/seata/core/protocol/transaction/AbstractGlobalEndRequest.class
-     sourceDir: core/src/main/java
-     sourceFile: io/seata/core/protocol/transaction/AbstractGlobalEndRequest.java
+  # Target Coverage: Unknown %
+  - target:
+    - dir: common/target/classes
+      file: io/seata/common/util/DurationUtil.class
+      sourceDir: common/src/main/java
+      sourceFile: io/seata/common/util/DurationUtil.java
+    # Child of DurationUtil.class
+    # Child Coverage: Unknown %
+    - dir: common/target/classes
+      file: io/seata/common/util/StringUtils.class
+      sourceDir: common/src/main/java
+      sourceFile: io/seata/common/util/StringUtils.java
+        # Target Coverage: Unknown %
+  - target:
+    - dir: common/target/classes
+      file: io/seata/common/util/ReflectionUtil.class
+      sourceDir: common/src/main/java
+      sourceFile: io/seata/common/util/ReflectionUtil.java
